@@ -1,0 +1,40 @@
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  max-width: 800px;
+  margin: 40px auto;
+  line-height: 1.5;
+  color: #000;
+  background: #fff;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 25px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 3px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+button {
+  font-size: 12px;
+  padding: 4px 8px;
+  margin-top: 10px;
+}
+
+@media print {
+  button {
+    display: none;
+  }
+}
