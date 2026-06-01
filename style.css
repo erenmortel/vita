@@ -1,0 +1,106 @@
+/* Standard Serif Typography */
+body {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.5;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    min-height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar-content {
+    position: sticky;
+    top: 40px;
+}
+
+.download-btn {
+    display: block;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.download-btn:hover {
+    background-color: #000;
+}
+
+.contact-brief p {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+/* Main Content Styling */
+.content {
+    flex: 1;
+    padding: 40px 60px;
+    background-color: white;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2.2em;
+    border-bottom: 2px solid #333;
+}
+
+h2 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    margin-top: 30px;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #555;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    font-size: 0.9em;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: auto;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+    .content {
+        padding: 20px;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
